@@ -1,18 +1,6 @@
-`# import pyttsx3
+# AI DESKTOP VOICE ASSISTANT USING PYTHON
 
-# engine = pyttsx3.init('sapi5')
-# voices = engine.getProperty('voices')
-# # print(voices)`
-# engine.setProperty('voice',voices[2].id)
-
-# def speak(audio):
-#     engine.say(audio)
-#     engine.runAndWait()
-
-# if __name__ == "__main__":
-#     speak("Hitesh is very good boy")
-
-import pyttsx3 #pip install pyttsx3
+import pyttsx3 #pip install pyttsx3==2.6
 import speech_recognition as sr #pip install speechRecognition
 import datetime
 import wikipedia #pip install wikipedia
@@ -42,7 +30,7 @@ def wishMe():
     else:
         speak("Good Evening!")  
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")       
+    speak("Hello Hitesh, Please tell me how may I help you")       
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -108,9 +96,9 @@ if __name__ == "__main__":
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
             speak(f"Sir, the time is {strTime}")
 
-        # elif 'open code' in query:
-        #     codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
-        #     os.startfile(codePath)
+        elif 'open code' in query:
+            codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            os.startfile(codePath)
 
         elif 'email to hitesh' in query:
             try:
